@@ -80,3 +80,42 @@ main {
 footer {
     background-color: green;
 }
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+    ul {
+        float: right;
+    }
+    ul li {
+        display: inline-block;
+    }
+    /* main content  push main content down to accomodate header*/
+    main {
+        margin-top: 79px;
+    }
+}
