@@ -73,6 +73,7 @@ nav {
 main {
     background-color: orange;
     flex: 1 0 auto;
+    margin-top: 47px;
     /* make main element take up surplus space */
 }
 /* footer */
