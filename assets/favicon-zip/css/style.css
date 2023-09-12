@@ -119,3 +119,8 @@ footer {
         margin-top: 79px;
     }
 }
+@media screen and (min-width: 992px) {
+    #menu ul li a:hover {
+        text-decoration: underline;
+    }
+}
