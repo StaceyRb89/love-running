@@ -19,6 +19,9 @@ header {
     margin-top: 5px;
     background-color: aqua;
 }
+h1 {
+    font-family: "oswald", sans-serif;
+}
 /* main */
 main {
     background-color: orange;
