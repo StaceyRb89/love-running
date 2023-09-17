@@ -93,7 +93,7 @@ main {
     padding-top: 40px;
     padding-left: 10px;
 }
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2, #cover-text>h3 {
     color: #ffffff;
 }
 /* reasons section */
@@ -101,12 +101,17 @@ main {
     width: 90%;
     margin-top: 20px auto;
 }
+#reasons h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
 #reasons h2 {
     margin-bottom: 20px;
     font-size: 280%;
     text-align: center;
 }
-#benefits-physical > div, #benefits-mental> div {
+#benefits-physical>div, #benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -145,9 +150,11 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
+    
     nav {
         display: block;
         position: relative;
@@ -188,19 +195,6 @@ main {
         right: 50px;
     }
 
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-#social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
-    }
      /* Reasons section */
      #benefits-physical,
      #benefits-mental {
@@ -222,5 +216,32 @@ main {
 @media screen and (min-width: 992px) {
     #menu ul li a:hover {
         text-decoration: underline;
+    }
+}
+@media screen and (min-width: 1200px) {    
+    /* Reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits > div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
     }
 }
