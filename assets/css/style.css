@@ -1,10 +1,12 @@
 /* google font import */
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /* generic project styles */
 body {
     min-height: 100vh;
@@ -13,7 +15,10 @@ body {
     color: 3a3a3a;
     font-family: 'lato', sans-serif;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-family: "oswald", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -24,6 +29,7 @@ h1, h2, h3 {
 .hidden-heading {
     display: none;
 }
+
 /* generic project styles */
 /* header */
 header {
@@ -38,21 +44,26 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
+
 header a {
     text-decoration: none;
     color: inherit;
 }
-#menu ul{
+
+#menu ul {
     font-size: 110%;
     letter-spacing: 4px;
     list-style: none;
 }
-#menu > li {
+
+#menu>li {
     margin-bottom: 1em;
 }
+
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
 /* navbar styles with dropdown toggle */
 nav {
     position: absolute;
@@ -64,28 +75,34 @@ nav {
     display: none;
     top: 100%;
 }
+
 #nav-toggle:checked~nav {
     display: block;
 }
+
 #nav-toggle {
     display: none;
 }
+
 .nav-toggle-label {
     font-size: 2rem;
 }
+
 /* main */
 main {
     flex: 1 0 auto;
     margin-top: 47px;
     /* make main element take up surplus space */
 }
+
 /* hero section */
 #hero {
     height: 600px;
     width: 100%;
     background: url("../images/hero.jpg") no-repeat center center/cover;
     position: relative;
-} 
+}
+
 #cover-text {
     /* last value sets the opacity value */
     background-color: rgba(241, 109, 107, .7);
@@ -97,36 +114,46 @@ main {
     padding-top: 40px;
     padding-left: 10px;
 }
-#cover-text>h2, #cover-text>h3 {
+
+#cover-text>h2,
+#cover-text>h3 {
     color: #ffffff;
 }
+
 /* reasons section */
 #reasons {
     width: 90%;
     margin: auto;
 }
+
 #reasons h1 {
     font-size: 2rem;
     text-align: center;
     padding: 10px 10px 10px 10px;
 }
+
 #reasons h2 {
     margin-bottom: 20px;
     font-size: 280%;
     text-align: center;
 }
-#benefits-physical>div, #benefits-mental>div {
+
+#benefits-physical>div,
+#benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
     padding: 0 10px 0 10px;
 }
+
 #benefits p {
     padding: 0 20px;
 }
+
 #benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 1% 0;
 }
+
 #circle-cover-bg {
     background: url('../images/reasons-image.jpg') no-repeat top center / cover;
     height: 90vw;
@@ -136,16 +163,19 @@ main {
     max-width: 300px;
     max-height: 300px;
 }
+
 #benefits-image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #times {
     background: url('../images/dublin-city.webp') no-repeat center/cover;
     display: flex;
     flex-wrap: wrap;
 }
+
 #times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
@@ -163,6 +193,7 @@ main {
     /* Override the heading colour set in general styles */
     color: #fafafa;
 }
+
 /* Gallery page */
 #photos img {
     width: 100%;
@@ -188,10 +219,18 @@ main {
     color: #3a3a3a;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
-    
+
     nav {
         display: block;
         position: relative;
@@ -204,7 +243,7 @@ main {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -217,52 +256,69 @@ main {
         line-height: 75px;
         margin: 0 0.5rem;
     }
+
     ul li {
         display: inline-block;
     }
+
     /* main content  push main content down to accomodate header*/
     main {
         margin-top: 79px;
     }
+
     #cover-text {
         width: 300px;
         right: 50px;
     }
 
-     /* Reasons section */
-     #benefits-physical,
-     #benefits-mental {
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-     }
- 
-     #benefits-physical>div,
-     #benefits-mental>div {
-         width: 75%;
-     }
- 
-     #benefits-mental>div {
-         text-align: end;
-         align-self: flex-end;
-     }
-#reasons {
-    margin: auto;
+    /* Reasons section */
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
+
+    #benefits-mental>div {
+        text-align: end;
+        align-self: flex-end;
+    }
+
+    #reasons {
+        margin: auto;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
 }
-}
+
 @media screen and (min-width: 992px) {
     #menu ul li a:hover {
         text-decoration: underline;
     }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
+    }
 }
-@media screen and (min-width: 1200px) {    
+
+@media screen and (min-width: 1200px) {
+
     /* Reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
     }
 
-    #benefits > div {
+    #benefits>div {
         flex: 1;
     }
 
@@ -274,11 +330,11 @@ main {
         order: 1;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         align-self: flex-start;
     }
 
-    #benefits-physical > div {
+    #benefits-physical>div {
         align-self: flex-end;
     }
 }
