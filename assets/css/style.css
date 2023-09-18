@@ -99,7 +99,7 @@ main {
 /* reasons section */
 #reasons {
     width: 90%;
-    margin-top: 20px auto;
+    margin: auto;
 }
 #reasons h1 {
     font-size: 2rem;
@@ -114,6 +114,7 @@ main {
 #benefits-physical>div, #benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
+    padding: 0 10px 0 10px;
 }
 #benefits p {
     padding: 0 20px;
@@ -180,9 +181,6 @@ main {
         line-height: 75px;
         margin: 0 0.5rem;
     }
-    ul {
-        float: right;
-    }
     ul li {
         display: inline-block;
     }
@@ -212,6 +210,9 @@ main {
          text-align: end;
          align-self: flex-end;
      }
+#reasons {
+    margin: auto;
+}
 }
 @media screen and (min-width: 992px) {
     #menu ul li a:hover {
