@@ -20,6 +20,10 @@ h1, h2, h3 {
     color: #252525;
     font-size: 1.6rem;
 }
+
+.hidden-heading {
+    display: none;
+}
 /* generic project styles */
 /* header */
 header {
